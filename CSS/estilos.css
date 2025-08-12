@@ -1,0 +1,275 @@
+/* Estilos generales*/
+* {
+    box-sizing: border-box;
+    padding: 0 auto;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    background-color: #020e34;
+    color: white;
+    background-image: url(../images/arrozG.jpg);
+}
+
+header img {
+    border-radius: 15px;
+    opacity: 0.6;
+    flex: 7%;
+}
+
+.header {
+    flex: 93%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    text-align: initial;
+    font-size: 100%;
+    padding-left: 10px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-style: oblique;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav {
+    display: flex;
+    background-color: #5f5311;
+}
+
+nav a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover, .active {
+    background-color: white;
+    color: black;
+}
+
+footer {
+    text-align: center;
+    background-color: #5f5311;
+    color: white;
+    display: flex;
+    line-height: 1px;
+    padding-bottom: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 1px 10px;
+}
+
+.logos {
+    width: 15px;
+    height: auto;
+}
+
+.izq {
+    flex: 35%;
+}
+
+.der {
+    flex: 35%;
+}
+
+.copi {
+    flex: 30%;
+}
+
+/* Responsive*/
+@media screen and (max-width: 700px) {
+
+    .container,
+    nav,
+    .containerContacto, .containerPresup, header {
+        flex-direction: column;
+    }
+}
+
+/* Estilos de index*/
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+article {
+    text-align: justify;
+    line-height: 25px;
+    font-size: medium;
+}
+
+.foto0 {
+    width: 300px;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 10px solid #dcd298;
+}
+
+.foto1 {
+    width: 300px;
+    height: auto;
+    float: right;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: 10px solid #dcd298;
+}
+
+aside {
+    flex: 30%;
+    padding: 20px;
+}
+
+.val {
+    border: 5px solid #dcd298;
+}
+
+.rating,
+aside>h2 {
+    align-items: center;
+    margin: 10px;
+}
+
+h5 {
+    align-items: center;
+    margin: 10px;
+}
+
+.stars {
+    color: gold;
+    margin-right: 10px;
+}
+
+section {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+.section1 {
+    flex: 40%;
+    background-color: white;
+    padding: 20px;
+}
+
+.img200 {
+    background-color: #dcd298;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* Estilos de contacto*/
+.containerContacto {
+    display: flex;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.izqC {
+    flex: 30%;
+}
+
+.derC {
+    flex: 70%;
+}
+
+.mapa {
+    margin-top: 40px;
+    width: 95%;
+    height: 80%;
+    border-radius: 15px;
+}
+
+.lugar {
+    align-items: center;
+    width: 95%;
+    height: 90%;
+    border-radius: 15px;
+    opacity: 0.7;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Estilos de galeria*/
+.fotoGalerias{
+    width:  30%;
+    height:auto;
+    display: block;
+}
+
+.fotoGaleria {
+    margin: 4%;
+    width: 90%;
+    height: auto;
+    border: 10px solid #dcd298;
+    border-radius: 20px;
+    transition: 2s ease-in;
+}
+
+img.fotoGaleria:hover {
+    transform: scale(1.2);
+
+}
+.center {
+    text-align: center;
+}
+
+/* Estilos de presupuesto*/
+.containerPresup {
+    display: flex;
+}
+
+.form{
+    flex: 40%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.label{
+    line-height: 50px;
+    font-weight: bold;
+}
+
+.horario{
+    flex: 30%;
+    text-align: center;
+}
+
+.fotoHorario{
+    margin-top: 30px;
+    width: 90%;
+    height: 85%;
+    opacity: 0.7;
+    border-radius: 15px;
+    border: 10px solid #dcd298;
+}
+
+.buton{
+    background-color: #dcd298;
+    border: 3px solid #5f5311;;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    width: 100px;
+    height: 30px;
+}
+
+.buton:hover{
+    background-color: white;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Arrosura restaurante</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Archivo de estilos css*/ -->
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/estilos.css'>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h1>Arrosura-Restaurante</h1>
+            <h3>Arroces y Bebidas</h3>
+        </div>
+        <img src="images/logoF.png" width="221" height="201" alt="Logo arrosura">
+    </header>
+    <!--Menu de navegación-->
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Galería</a>
+        <a class="active" href="presupuesto.html">Reservas</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+    <!--Contenedor-->
+    <div class="containerPresup">
+        <form class="form">
+            <h2>Rellene sus Datos</h2>
+            <label class="label">Nombre: </label><input style="text-transform: capitalize;" placeholder="Nombre" type="text" required><br>
+            <label class="label">Email: </label><input  style="text-transform: lowercase" placeholder="ejemplo@dominio.com"
+                type="text" pattern="[a-zA-Z0-9!#$%&'*\/=?^_`\{\|\}~\+\-]([\.]?[a-zA-Z0-9!#$%&'*\/=?^_`\{\|\}~\+\-])+@[a-zA-Z0-9]([^@&%$\/\(\)=?¿!\.,:;]|\d)+[a-zA-Z0-9][\.][a-zA-Z]{2,4}([\.][a-zA-Z]{2})?"
+              title="Por favor introduzca un email válido" required><br>
+            <label class="label">Teléfono: </label><input placeholder="000-000-000" type="tel" pattern="\d{3}\d{3}\d{3}"
+                title="Introduzca un teléfono válido de 9 dígitos" required><br>
+            <label class="label">Horario de reserva: <br></label><textarea rows="4" cols="30"
+                placeholder="Indique horario y detalles de la reserva" required></textarea><br><br>
+            <input type="checkbox" required>
+            <label>Acepto la <a href="/politica-de-privacidad" target="_blank">política de privacidad</a>.
+            </label>
+            <br><br>
+            <input class="buton" type="submit" value="Enviar Datos">&MediumSpace;
+            <input class="buton" type="reset" value="Borrar Datos"><br><br>
+        </form>
+        <div class="horario center">
+            <img class="fotoHorario" src="images/horario.jpg" width="814" height="660" alt="horario">
+        </div>
+    </div>
+    <!--Pie de página-->
+    <footer>
+        <div class="izq">
+            <p>Redes sociales:</p><br>
+            <a href="https://www.facebook.com/people/Arrosura/61565884476697/?sk=reels_tab" target="_blank">
+                <img class="logos" src="images/facebook.png" alt="facebook" height="512" width="512">
+            </a>
+            <a href="https://www.instagram.com/arrosura/" target="_blank">
+                <img class="logos" src="images/instagram.png" alt="instagram" height="512" width="512">
+            </a>
+            <a href="https://wa.me/+36696358007" target="_blank">
+                <img class="logos" src="images/whatsapp.png" alt="whatsapp" height="512" width="512">
+            </a>
+        </div>
+        <div class="der">
+            <p>Dirección: </p>
+            <a href="https://consent.google.com/m?continue=https://maps.google.com/maps?q%3DArrosura,%2BC.%2Bla%2BLuna,%2B8,%2B38002%2BSanta%2BCruz%2Bde%2BTenerife%26ftid%3D0xc41cba946ca305b:0xd4a755af85ec9174%26entry%3Dgps%26lucs%3D,94242541,94224825,94227247,94227248,47071704,47069508,94218641,94203019,47084304,94208458,94208447%26g_ep%3DCAISDTYuMTM3LjEuODkyMDAYACCenQoqYyw5NDI0MjU0MSw5NDIyNDgyNSw5NDIyNzI0Nyw5NDIyNzI0OCw0NzA3MTcwNCw0NzA2OTUwOCw5NDIxODY0MSw5NDIwMzAxOSw0NzA4NDMwNCw5NDIwODQ1OCw5NDIwODQ0N0ICRVM%253D%26g_st%3Dcom.google.maps.preview.copy&gl=ES&m=0&pc=m&uxe=eomtm&cm=2&hl=es-419&src=1"
+                target="_blank">
+                <img class="logos" src="images/ubicacion.png" width="512" height="512" alt="ubicacion">
+            </a>
+        </div>
+        <div class="copi">
+            <p>Aviso Legal</p>
+            <img class="logos" src="images/simbolo-de-copyright.png" alt="simbolo-de-copyright" width="512"
+                height="512">
+        </div>
+    </footer>
+</body>
+
+</html>
